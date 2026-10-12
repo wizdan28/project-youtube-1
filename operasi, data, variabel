@@ -1,0 +1,30 @@
+#operasi arimatika
+
+a = 5
+b = 10
+
+#operasi penjumlahan
+print("Hasil penjumlahan a + b =", a + b)
+
+
+#operasi pengurangan
+print("Hasil pengurangan a - b =", a - b)
+
+#operasi perkalian
+print("Hasil perkalian a * b =", a * b)
+
+#operasi pembagian
+print("Hasil pembagian a / b =", a / b)
+
+#operasi modulus
+print("Hasil modulus a % b =", a % b)
+
+#operasi pangkat
+print("Hasil pangkat a ** b =", a ** b)
+
+#operasi floor
+print("Hasil floor a // b =", a // b)
+
+angka1 = input("Masukkan angka pertama: ")
+angka2 = input("Masukkan angka kedua: ")
+print("Hasil penjumlahan", angka1, "+", angka2, "=", int(angka1) + int(angka2))
