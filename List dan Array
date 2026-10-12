@@ -1,0 +1,11 @@
+buah = ["apel", "nanas", "durian", "melon"]
+
+buah.clear()
+
+print(buah)
+
+buah = ["apel", "nanas", "durian", "melon"]
+
+buah.append("mangga")
+
+print(buah)
