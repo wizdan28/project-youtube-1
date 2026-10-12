@@ -1,0 +1,11 @@
+nama = 'wizdan'
+kuliah_di = 'undip'
+angkatan = 26
+print(nama)
+print(kuliah_di)
+print(angkatan)
+
+alas = 20
+tinggi = 10
+luas = alas * tinggi / 2
+print("Luas segitiga dengan alas", alas, "dan tinggi", tinggi, "adalah", luas)
