@@ -1,0 +1,15 @@
+temperature = 0
+ac = 0
+heater = 0
+
+temperature = float(input("Masukkan suhu: "))
+
+if temperature > 20:
+    heater = 1
+    print("kondisi heater = ", heater)
+elif temperature >= 20 and temperature <= 25:
+    print("kondisi stabil")
+    print("heater = ", heater, "ac = ", ac)
+elif temperature > 25:
+    ac = 1
+    print("kondisi AC = ", ac)
