@@ -1,0 +1,53 @@
+fast_food_menu = [
+    "ayam krispi",
+    "pizza",
+    "kentang",
+    "burger",
+    "spaggheti",
+    "coca cola",
+    "pepsi"
+]
+
+fast_food_order = []
+total_harga = 0
+harga_per_item = 10000
+
+print("apa kabar!")
+
+while True:
+    jawaban = input("mau pesan tidak? (mau/tidak): ").strip().lower()
+
+    if jawaban == "mau":
+        print("\nfast food menu:")
+        for i, makanan in enumerate(fast_food_menu, start=1):
+            print(f"{i}. {makanan}")
+        
+        pilihan = input("mau pesan apa? (ketik nama menu): ").strip().lower()
+
+        if pilihan in fast_food_menu:
+            fast_food_order.append(pilihan)
+            total_harga += harga_per_item
+            
+            print(f"menambahkan {pilihan} ke pesanan")
+            print(f"pesanan saat ini: {fast_food_order}")
+            print(f"harganya jadi Rp. {total_harga}\n")
+        else:
+            print("maaf, menu tersebut tidak ada di daftar.\n")
+
+    elif jawaban == "tidak":
+        break
+
+    else:
+        print("masukkan hanya 'mau' atau 'tidak'.\n")
+
+print("\n=== RINGKASAN PESANAN ===")
+
+if fast_food_order:
+    print("fast food order:")
+    for i, makanan in enumerate(fast_food_order, start=1):
+        print(f"{i}. {makanan}")
+    
+    print(f"\nmakasih! total harganya jadi Rp. {total_harga} selamat menikmati!!")
+else:
+    print("kamu belum memesan apa-apa.")
+    print("terima kasih!")
